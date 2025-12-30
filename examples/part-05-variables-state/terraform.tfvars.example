@@ -1,0 +1,29 @@
+# Example Terraform Variables File
+# Copy this file to terraform.tfvars and fill in your values
+
+environment       = "dev"
+aws_region        = "us-west-2"
+instance_type     = "t2.micro"
+instance_count    = 1
+enable_monitoring = false
+
+allowed_ssh_cidrs = [
+  "YOUR.IP.ADDRESS.HERE/32" # Replace with your IP
+]
+
+tags = {
+  Team       = "your-team"
+  CostCenter = "your-cost-center"
+  Project    = "terraform-tutorial"
+}
+
+server_config = {
+  instance_type = "t2.micro"
+  volume_size   = 20
+  volume_type   = "gp3"
+}
+
+# IMPORTANT: Set sensitive variables via environment variables
+# export TF_VAR_db_password="your-secure-password-min-16-chars"
+# DO NOT uncomment the line below:
+# db_password = "NEVER_HARDCODE_PASSWORDS_IN_FILES"
