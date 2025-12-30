@@ -1,0 +1,14 @@
+# asdf tool versions
+# https://asdf-vm.com/
+
+# Terraform - Infrastructure as Code
+terraform 1.6.6
+
+# Go - Required for Terratest (Part 10)
+golang 1.21.6
+
+# Python - Required for scripts and automation
+python 3.11.7
+
+# Node.js - Optional, for some CI/CD examples
+nodejs 20.11.0

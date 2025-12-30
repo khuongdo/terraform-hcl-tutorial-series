@@ -1,0 +1,101 @@
+# Terraform
+*.tfstate
+*.tfstate.*
+*.tfvars
+!*.tfvars.example
+.terraform/
+.terraform.lock.hcl
+crash.log
+crash.*.log
+override.tf
+override.tf.json
+*_override.tf
+*_override.tf.json
+.terraformrc
+terraform.rc
+
+# Terraform plan files
+*.tfplan
+tfplan
+
+# Cloud Provider Credentials
+# AWS
+.aws/
+*.pem
+*.key
+
+# GCP
+*.json
+!.github/**/*.json
+gcp-credentials.json
+service-account*.json
+
+# Azure
+.azure/
+*.publishsettings
+
+# Secrets and Sensitive Data
+secrets/
+*.secret
+*.env
+.env
+.env.*
+!.env.example
+
+# IDE and Editors
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+
+# Go (for Terratest)
+vendor/
+*.exe
+*.exe~
+*.dll
+*.so
+*.dylib
+*.test
+*.out
+go.work
+
+# Python (for scripts)
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+venv/
+ENV/
+env/
+
+# OS Generated Files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# Test outputs
+test-results/
+*.log
+
+# Temporary files
+tmp/
+temp/
+*.tmp
+*.bak
+
+# Documentation build artifacts
+.hugo_build.lock
+public/
+resources/_gen/
+
+# Coverage reports
+coverage.txt
+*.coverage
+htmlcov/
