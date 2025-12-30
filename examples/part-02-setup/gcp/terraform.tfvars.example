@@ -1,0 +1,12 @@
+# Example Terraform Variables for GCP
+# Copy this file to terraform.tfvars and fill in your values
+
+# REQUIRED: Your GCP Project ID
+# Find at: https://console.cloud.google.com/ (top dropdown)
+gcp_project_id = "your-project-id-here"
+
+# Optional: GCP region (default: us-central1)
+gcp_region = "us-central1"
+
+# Optional: Check billing account (requires permissions)
+check_billing = false
